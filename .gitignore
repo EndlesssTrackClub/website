@@ -1,0 +1,6 @@
+/tc2021/public/
+/tc2021/resources/_gen/
+
+hugo.exe
+hugo.darwin
+hugo.linux

@@ -1,0 +1,20 @@
+{{ define "main" }}
+<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
+  {{ partial "mobile_nav_toggle.html" . }}
+  <h4>HOT NEWS CHUNKS</h4><br>
+  {{ range sort .Data.Pages ".Params.date" "desc" }}
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="content-column-content">
+         <h4>{{ .Title }}</h4>
+         <i>{{ dateFormat "Monday, January 2, 2006" .Date }}</i>
+         <div>
+          {{ .Content }}
+         </div>
+         
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

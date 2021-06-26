@@ -1,0 +1,42 @@
+baseURL = "https://trackclub.live/"
+languageCode = "en-us"
+title = "Trackclub"
+theme = "port"
+
+[params]
+  # Style options: default (pink), blue, green, pink, red, sea, violet
+  # Use custom.css for your custom styling
+  style = "default"
+  description = "TRACKCLUB"
+  copyright = "&copy;2021 Trackclub Collective"
+  sidebarAbout = [
+    "We are a group of musicians and producers growing together by submitting a track every week out of a dedicated weekly jam in the collaborative music application [Endlesss](https://endlesss.fm).",
+    "Come find us on our [Discord](https://discord.gg/VVu9kurV)"
+  ]
+
+  # Nav links in the side bar
+  [[params.navlinks]]
+  name = "Home"
+  url = "portfolio/"
+  home = true
+
+  [[params.navlinks]]
+  name = "Crew"
+  url = "crew/"
+
+  [[params.navlinks]]
+  name = "News"
+  url = "news/"
+
+  [params.social]
+  #facebook      = "full page or profile url in facebook"
+  #googleplus    = "full profile url in googleplus"
+  #email         = "email@example.com"
+  twitter       = "https://twitter.com/The_Track_Club"
+  #linkedin      = "full profile url in linkedin"
+  #stackoverflow = "full profile url in stackoverflow"
+  instagram     = "https://www.instagram.com/track_club_collective/"
+  #github        = "full profile url in github"
+  #gitlab        = "full profile url in gitlab"
+  youtube       = "https://www.youtube.com/channel/UCr6bwXpa5jXsZS_KEyZ7gBQ"
+  soundcloud    = "https://soundcloud.com/the-track-club"
