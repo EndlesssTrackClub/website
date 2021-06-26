@@ -1,0 +1,12 @@
++++
+showonlyimage = false
+draft = false
+date = "2021-06-25"
+title = "SOLAR SURFACE"
+ourospect = "yep"
+weight = 10
++++
+
+Tap the swirls to play a mix from a recent jam; tap again to mutate which stems are chosen. Click n' drag!
+
+<!--more-->
