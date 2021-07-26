@@ -1,3 +1,18 @@
+<script src="{{ "wimpy/wimpy.js" | absURL }}" type="text/javascript"></script>
+<script>
+
+  // set the display style for all audioLoad classes to none
+  function wimpyIsReady () {
+    $('.audioLoad').fadeOut(250);
+    var audioPlayerFadeIn = setInterval(function() {
+      $('.audioPlayer').fadeIn(500);
+    }, 250);
+  }
+  wimpy.onReady(wimpyIsReady);
+
+</script>
+
+
 <script src="{{ "js/jquery.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
 <script src="{{ "js/jquery.cookie.js" | absURL }}"> </script>

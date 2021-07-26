@@ -4,7 +4,7 @@
         <div class="row">
           {{ range sort .Data.Pages ".Params.weight" "desc" }}
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 masonry-item">
-                  <div class="box-masonry" style="border-bottom: 8px solid #ef5285">
+                  <div class="box-masonry" style="border-bottom: 8px solid #0a72c7">
                       {{ if and (isset .Params "image") .Params.image }}
                         {{ if eq .Params.showonlyimage true }}
                         <a href="{{ .Permalink }}" title="" class="box-masonry-image with-hover-overlay">

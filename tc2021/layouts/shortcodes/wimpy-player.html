@@ -1,0 +1,8 @@
+<div class="audioPlayer"
+    data-wimpyplayer
+    data-responsive
+    data-skin='{{ "wimpy/active_skin.tsv" | absURL }}'
+    data-media="{{ index .Params 0 | absURL }}"
+    data-name="{{ index .Params 1 }}"
+    data-volume=0.6
+    ></div>

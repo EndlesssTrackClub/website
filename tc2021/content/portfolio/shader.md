@@ -2,7 +2,7 @@
 showonlyimage = false
 draft = false
 date = "2021-06-25"
-title = "SOLAR SURFACE"
+title = "RIFFF SAMPLER"
 ourospect = "yep"
 weight = 10
 +++

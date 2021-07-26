@@ -4,7 +4,7 @@ draft = false
 image = ""
 title = "ishani"
 where = "UK"
-soundcloud = "https://soundcloud.com/inahsi"
+audioclip = "music/crew-ishani.mp3"
 +++
 
-Are you going to finish that sandwich can I have it
+Zaphod's just this guy, you know?
