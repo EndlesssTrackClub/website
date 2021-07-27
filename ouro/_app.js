@@ -829,6 +829,9 @@ const eUpdateMode = {
   FadeOutForMutation:   'FadeOutForMutation',
   Mutating:             'Mutating',
   FadeIn:               'FadeIn',
+  FadeOutToPause:       'FadeOutToPause',
+  FadeInFromPause:      'FadeInFromPause', 
+  HasPaused:            'HasPaused',
 }
 
 var lastTimestamp       = performance.now();
@@ -965,6 +968,21 @@ function update() {
             break;
 
             case eUpdateMode.Idle:
+            {
+            }
+            break;
+
+            case eUpdateMode.FadeOutToPause:
+            {
+                if ( allAudioGainSilent )
+                {
+                    updateMode = eUpdateMode.HasPaused;
+                }
+            }
+            break;
+
+            case eUpdateMode.FadeInFromPause:
+            case eUpdateMode.HasPaused:
             {
             }
             break;
@@ -1156,6 +1174,8 @@ const initialClick_UnlockAndLaunchAudio = () =>
 
 function onTap(ev)
 {
+    console.log(" => onTap");
+
     if ( updateMode == eUpdateMode.Idle )
     {
         for (let iB = 0; iB < c_stemBlockCount; iB++) 
@@ -1169,6 +1189,33 @@ function onTap(ev)
 
         biquadFilter.frequency.exponentialRampToValueAtTime( 700, audioCtx.currentTime + 3.0 );
         updateMode = eUpdateMode.FadeOutForMutation;
+    }
+    if ( updateMode == eUpdateMode.HasPaused )
+    {
+        updateMode = eUpdateMode.FadeInFromPause;
+        setTimeout( () => { 
+            updateMode = eUpdateMode.FadeIn;
+            enqueueGainRampUp( 3.0 );
+        }, 200 );
+    }
+}
+
+function onDoubleTap(ev)
+{
+    console.log(" => onDoubleTap");
+
+    if ( updateMode == eUpdateMode.Idle )
+    {
+        for (let iB = 0; iB < c_stemBlockCount; iB++) 
+        {
+            setTimeout( () =>
+            {
+                gainNodes[iB].gain.setValueCurveAtTime( c_gainSlowOut, audioCtx.currentTime, 2.0 );
+                gainVisualTargets[iB] = c_gainOff;
+            }, iB * 200 );
+        }
+
+        updateMode = eUpdateMode.FadeOutToPause;
     }
 }
 
@@ -1221,9 +1268,16 @@ function initialClickHandler(event)
     hammerInstance = new Hammer.Manager(canvas);
 
     hammerInstance.add(new Hammer.Pan({ direction: Hammer.DIRECTION_ALL, threshold: 0, pointers: 0 }));
-    hammerInstance.add(new Hammer.Tap());
-    
+
+    var singleTap = new Hammer.Tap({ event: 'tap' });
+    var doubleTap = new Hammer.Tap({event: 'doubletap', taps: 2 });
+
+    hammerInstance.add([doubleTap, singleTap]);
+    doubleTap.recognizeWith(singleTap);
+    singleTap.requireFailure(doubleTap);
+
     hammerInstance.on( "tap",        onTap );
+    hammerInstance.on( "doubletap",  onDoubleTap );
     hammerInstance.on( "panstart",   onPanBegin );
     hammerInstance.on( "panmove",    onPanContinue );
     hammerInstance.on( "hammer.input", (ev) => { if(ev.isFinal) { onInputFinished(); } } );
