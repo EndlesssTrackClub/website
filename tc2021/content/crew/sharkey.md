@@ -3,6 +3,7 @@ showonlyimage = false
 draft = false
 image = ""
 title = "William Sharkey"
+tag = "sharkey"
 where = "USA"
 +++
 

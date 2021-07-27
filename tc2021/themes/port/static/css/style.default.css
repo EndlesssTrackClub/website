@@ -330,14 +330,14 @@ SIDEBAR + RIGHT COLUMN
   }
 }
 .sidebar-heading {
-  font-size: 28px;
+  font-size: 30px;
   /* font-weight: 700; */
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 @media (min-width: 1700px)  {
   .sidebar-heading {
-    font-size: 50px;
+    font-size: 60px;
   }
   }
   @media (max-width: 450px) {
@@ -347,7 +347,7 @@ SIDEBAR + RIGHT COLUMN
     }
   @media (min-width: 1400px) and (max-width: 1700px) {
     .sidebar-heading {
-      font-size: 40px;
+      font-size: 48px;
     }
   }
 
@@ -449,7 +449,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .small-navbar-heading {
   float: right;
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 10px;

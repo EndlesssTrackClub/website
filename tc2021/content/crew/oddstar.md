@@ -3,6 +3,7 @@ showonlyimage = false
 draft = false
 image = ""
 title = "oddSTAR"
+tag = "oddstar"
 where = "USA"
 +++
 
