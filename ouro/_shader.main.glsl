@@ -89,20 +89,13 @@ vec3 ourospectEntrypoint(
 
     float col_raw = (_touchSum.y * 0.001) + (_beatFlow.x * 0.01) + (r * g * b);
     float col_t = osc_triangle(col_raw);
-    final =  mix( mpl_turbo( col_t ), vec3(0), smoothstep(0.4 + (kick * kick * 0.2), 1.0, col_t) );
+    final =  mix( mpl_turbo( _variance + (col_t * 0.4) ), vec3(0), smoothstep(0.4 + (kick * kick * 0.2), 1.0, col_t) );
 
 
 
     final = mix( final, vec3(1.0), _state.w);
     float monochrome = length(final * vec3(0.2125, 0.7154, 0.0721) );
     final = mix( vec3(monochrome), final, _state.x );
-
-    // vec2 v_uv = _uv * (1.0 - _uv.yx);   //vec2(1.0)- uv.yx; -> 1.-u.yx; Thanks FabriceNeyret !
-    
-    //float vig = v_uv.x * v_uv.y * 70.0; // multiply with sth for intensity
-    
-    //vig = saturate( pow(vig, 0.5 ) ); // change pow for modifying the extend of the  vignette
-
 
     vec3 scene = sqrt( 
         (final) 
