@@ -38,7 +38,17 @@
                             <p class="social">
                               {{ with .Params.soundcloud }}
                               <a href="{{ . }}" data-animate-hover="pulse" class="external">
-                                <i class="fa fa-soundcloud"></i>
+                                <i class="fab fa-soundcloud"></i>
+                              </a>
+                              {{end}}
+                              {{ with .Params.bandcamp }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fab fa-bandcamp"></i>
+                              </a>
+                              {{end}}
+                              {{ with .Params.spotify }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fab fa-spotify"></i>
                               </a>
                               {{end}}
                             </p>

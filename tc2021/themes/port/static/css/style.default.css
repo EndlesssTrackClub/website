@@ -379,8 +379,8 @@ SIDEBAR + RIGHT COLUMN
   color: #555555;
 }
 .sidebar-menu li:before {
-  font-family: 'FontAwesome';
-  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  content: '\f192';
   margin: 0 5px 0 -15px;
   color: #999999;
 }

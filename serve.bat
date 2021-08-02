@@ -1,0 +1,1 @@
+hugo server -s tc2021 -D -w
