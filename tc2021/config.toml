@@ -11,6 +11,7 @@ theme = "port"
   copyright = "&copy;2021 Trackclub Collective"
   sidebarAbout = [
     "We are a group of musicians and producers growing together by submitting a track every week out of a dedicated weekly jam in the collaborative music application [Endlesss](https://endlesss.fm).",
+    "Thumb through our growing [library of original music](/portfolio/weeklies/)",
     "Come find us on our [Discord](https://discord.gg/VVu9kurV)"
   ]
 
