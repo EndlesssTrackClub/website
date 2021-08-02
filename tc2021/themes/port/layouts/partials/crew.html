@@ -51,6 +51,11 @@
                                 <i class="fab fa-spotify"></i>
                               </a>
                               {{end}}
+                              {{ with .Params.website }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fas fa-link"></i>
+                              </a>
+                              {{end}}
                             </p>
                           </div>
                       </div>
