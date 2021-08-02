@@ -5,9 +5,11 @@ image = ""
 title = "von"
 tag = "von"
 where = "UK"
+soundcloud = "https://soundcloud.com/audubonswampgarden"
+bandcamp = "https://vonbongen.bandcamp.com/"
 +++
 
-I'm Von from the UK (also known as Vonbongen and Audubon Swamp Garden).
+I'm Von from the UK (also known as *Vonbongen* and *Audubon Swamp Garden*).
 
 I sing stuff and I like creating strange noises, glitching things up, playing around with filters and delay and randomness. This is allegedly 'sound design'.
 
