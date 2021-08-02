@@ -15,4 +15,4 @@ I sing stuff and I like creating strange noises, glitching things up, playing ar
 
 I like to invent spurious genres and then try to convince people that they actually exist. Previous attempts include commutercore, voidcore, operatic nightmare pop and horsewave.
 
-My major influences include Pan Daijing, Duran Duran Duran, Lorn, the Black Dog, Recoil, and (mainly) the other musicians I work with in Track Club.
+My major influences include *Pan Daijing*, *Duran Duran Duran*, *Lorn*, *the Black Dog*, *Recoil*, and (mainly) the other musicians I work with in Track Club.

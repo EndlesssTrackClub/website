@@ -56,6 +56,11 @@
                                 <i class="fas fa-link"></i>
                               </a>
                               {{end}}
+                              {{ with .Params.github }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fab fa-github"></i>
+                              </a>
+                              {{end}}
                             </p>
                           </div>
                       </div>
