@@ -17,6 +17,9 @@
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
+                          {{ with .Params.emo }}
+                          <i style="float:right;" class="em {{ . }}"></i>
+                          {{end}}
                           <h4>{{ .Title }}</h4>
 
                           <div class="box-masonry-description" id="view{{ .Params.Tag }}">
