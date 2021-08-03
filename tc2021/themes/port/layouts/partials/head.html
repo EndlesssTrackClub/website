@@ -6,15 +6,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | absURL }}">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Michroma:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ "fa5.15.3/css/all.min.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.carousel.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.theme.css" | absURL }}">
 <!-- Theme stylesheet, if possible do not edit this stylesheet -->
 {{ with .Site.Params.style }}
-  <link href="{{ printf "css/style.%s.css" . | absURL }}" rel="stylesheet" id="theme-stylesheet">
+  <link href="{{ printf "css/style.%s.css" . | absURL }}?v={{ index (seq 50 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
 {{ else }}
-  <link href="{{ "css/style.default.css" | absURL }}" rel="stylesheet" id="theme-stylesheet">
+  <link href="{{ "css/style.default.css" | absURL }}?v={{ index (seq 50 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
 {{ end }}
  <!-- Responsivity for older IE -->
 <!-- Just in case -->
@@ -24,6 +24,19 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   ` | safeHTML }}
+
+<style type="text/css">
+  @font-face {
+    font-family: 'Michroma';
+    src: url('{{ "fonts/Michroma.woff2" | absURL }}') format('woff2'),
+         url('{{ "fonts/Michroma.woff" | absURL }}') format('woff'),
+         url('{{ "fonts/Michroma.ttf" | absURL }}') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+</style>
+
 
 <script defer src="{{ "fa5.15.3/js/all.min.js" | absURL }}"></script>
 
