@@ -517,7 +517,6 @@ const loadStem = async ( url, stemI ) => {
     let params = {
         method: "GET",
         mode: "cors",
-        cache: "no-store",
         headers: {
             "Content-Type": "audio/mpeg",
             "Accept": "audio/mpeg"
