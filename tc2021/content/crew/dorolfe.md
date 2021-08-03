@@ -5,6 +5,8 @@ image = ""
 title = "dorolfe"
 tag = "dorolfe"
 where = "USA"
+soundcloud = "https://soundcloud.com/dorolfe"
+bandcamp = "http://davidrolfe.bandcamp.com/"
 +++
 
 Hello, I’m David (he/him) and I make music with Endlesss and my Internet friends. My primary musical influences are Orbital, Information Society, and the Florida rave scene in the mid- and late-90s (that means lots of electro, breaks, and drum and bass).
