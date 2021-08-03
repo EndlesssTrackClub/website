@@ -34,8 +34,11 @@ function masonry() {
     var $grid = $('.grid').masonry({
         itemSelector: ".masonry-item"
     });
-    $grid.imagesLoaded().progress(function () {
+    $grid.imagesLoaded().done(function () {
         $grid.masonry('layout');
+        setTimeout(function(){
+            $grid.masonry('layout');
+        }, 500);
     });
 }
 /* =========================================
