@@ -29,7 +29,16 @@
 
 <!-- Custom stylesheet - for your changes -->
 <link href="{{ "css/custom.css" | absURL }}" rel="stylesheet">
-<link rel="shortcut icon" href="{{ "img/favicon.png" | absURL }}">
+
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | absURL }}">
+<link rel="manifest" href="{{ "favicon/site.webmanifest" | absURL }}">
+<link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | absURL }}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
 {{ with .OutputFormats.Get "RSS" }}
   {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
 {{ end }}
