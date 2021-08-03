@@ -1,5 +1,6 @@
-/* your styles go here */
 
+
+/* style tricks used to aspect-fit the ourospect SVG in card headers */
 #onexone_container {
   display: inline-block;
   position: relative;
