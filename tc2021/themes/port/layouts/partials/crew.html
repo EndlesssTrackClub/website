@@ -46,6 +46,11 @@
                                 <i class="fab fa-bandcamp"></i>
                               </a>
                               {{end}}
+                              {{ with .Params.bandcamp2 }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fab fa-bandcamp"></i>
+                              </a>
+                              {{end}}
                               {{ with .Params.spotify }}
                               <a href="{{ . }}" data-animate-hover="pulse" class="external">
                                 <i class="fab fa-spotify"></i>
