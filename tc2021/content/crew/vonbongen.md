@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "von"
 tag = "von"
-where = "UK"
 soundcloud = "https://soundcloud.com/audubonswampgarden"
 bandcamp = "https://vonbongen.bandcamp.com/"
 +++

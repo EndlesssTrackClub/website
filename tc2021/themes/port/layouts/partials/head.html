@@ -10,11 +10,13 @@
 <link rel="stylesheet" href="{{ "fa5.15.3/css/all.min.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.carousel.css" | absURL }}">
 <link rel="stylesheet" href="{{ "css/owl.theme.css" | absURL }}">
+<link rel="stylesheet" href="{{ "css/lite-yt-embed.css" | absURL }}">
+
 <!-- Theme stylesheet, if possible do not edit this stylesheet -->
 {{ with .Site.Params.style }}
-  <link href="{{ printf "css/style.%s.css" . | absURL }}?v={{ index (seq 50 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
+  <link href="{{ printf "css/style.%s.css" . | absURL }}?v={{ index (seq 500 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
 {{ else }}
-  <link href="{{ "css/style.default.css" | absURL }}?v={{ index (seq 50 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
+  <link href="{{ "css/style.default.css" | absURL }}?v={{ index (seq 500 | shuffle) 0 }}" rel="stylesheet" id="theme-stylesheet">
 {{ end }}
  <!-- Responsivity for older IE -->
 <!-- Just in case -->
@@ -37,11 +39,14 @@
 }
 </style>
 
-
 <script defer src="{{ "fa5.15.3/js/all.min.js" | absURL }}"></script>
+<script defer src="{{ "js/lite-yt-embed.js" | absURL }}"></script>
 
 <link href="{{ "css/custom.css" | absURL }}" rel="stylesheet">
+
+{{ if eq .RelPermalink "/crew/" }}
 <link href="{{ "css/emoji.css" | absURL }}" rel="stylesheet">
+{{ end }}
 
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | absURL }}">
 <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | absURL }}">

@@ -1,3 +1,4 @@
+{{ if eq .RelPermalink "/crew/" }}
 <script src="{{ "wimpy/wimpy.js" | absURL }}" type="text/javascript"></script>
 <script>
 
@@ -11,7 +12,7 @@
   wimpy.onReady(wimpyIsReady);
 
 </script>
-
+{{ end }}
 
 <script src="{{ "js/jquery.min.js" | absURL }}"></script>
 <script src="{{ "js/bootstrap.min.js" | absURL }}"></script>

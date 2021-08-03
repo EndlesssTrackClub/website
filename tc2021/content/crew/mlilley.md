@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "mlilley2002"
 tag = "mlilley"
-where = "infinity"
 soundcloud = "https://soundcloud.com/mlilley"
 youtube = "https://youtube.com/playlist?list=PL7eT2s7tIBHP-iHrQc8AhZVKqZ9oAYn72"
 bandcamp = "https://citiesandmemory.bandcamp.com/album/smithsonian-treasures?t=14"

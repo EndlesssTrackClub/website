@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "Firephly"
 tag = "firephly"
-where = "USA"
 soundcloud = "https://soundcloud.com/firephly"
 bandcamp = "https://firephly.bandcamp.com/"
 spotify = "https://open.spotify.com/artist/39GVFdccoAGnSBFaxKB09K?si=MsXtAQgWSVeqI5uGTgCZWg&dl_branch=1"

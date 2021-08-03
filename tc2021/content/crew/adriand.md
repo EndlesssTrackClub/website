@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "adriandz"
 tag = "adriandz"
-where = "CAN"
 soundcloud = "https://soundcloud.com/adriandz"
 +++
 

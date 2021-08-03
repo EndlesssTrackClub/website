@@ -9,7 +9,7 @@ weight = 0
 
 Merging the improvisational, collaborative magic of Endlesss jamming with beat-synced live generative visuals; stay tuned for more experiments in this space.
 
-{{< youtube cQ2DRpkBmyE >}}
+{{< youtube-lite cQ2DRpkBmyE "Beamshaping Session II" >}}
 
 <!--more-->
 

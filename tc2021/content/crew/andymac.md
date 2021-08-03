@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "Andy_Mac"
 tag = "andymac"
-where = "USA"
 website = "https://www.viewbug.com/member/Andy_Mac"
 +++
 

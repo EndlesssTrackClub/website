@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "Dead Kousin"
 tag = "dk"
-where = "UK"
 soundcloud = "https://soundcloud.com/user-5414797"
 +++
 

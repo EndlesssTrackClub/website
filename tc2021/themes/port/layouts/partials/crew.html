@@ -1,8 +1,8 @@
 <div class="col-xs-12 col-sm-8 col-md-9 content-column">
     {{ partial "mobile_nav_toggle.html" . }}
     <div>
-      <br>
-      <p>An incomplete list of the Track Club crew ...</p>
+      <h3>CREW</h3>
+      <p>An incomplete list of Track Club members...</p>
     </div>
     <div class="grid" id="the-main-grid">
         <div class="row">
@@ -20,7 +20,7 @@
                           {{ with .Params.emo }}
                           <i style="float:right;" class="em {{ . }}"></i>
                           {{end}}
-                          <h4>{{ .Title }}</h4>
+                          <h4 style="font-family: Inter; font-size: 1.3em;">{{ .Title }}</h4>
 
                           <div class="box-masonry-description" id="view{{ .Params.Tag }}">
                             {{ if and (isset .Params "audioclip") .Params.audioclip }}
@@ -72,6 +72,11 @@
                               {{ with .Params.youtube }}
                               <a href="{{ . }}" data-animate-hover="pulse" class="external">
                                 <i class="fab fa-youtube"></i>
+                              </a>
+                              {{end}}
+                              {{ with .Params.insta }}
+                              <a href="{{ . }}" data-animate-hover="pulse" class="external">
+                                <i class="fab fa-instagram"></i>
                               </a>
                               {{end}}
                             </p>

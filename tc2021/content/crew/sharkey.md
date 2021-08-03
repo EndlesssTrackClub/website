@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "William Sharkey"
 tag = "sharkey"
-where = "USA"
 +++
 
 William Sharkey is from Valley Forge in Pennsylvania.

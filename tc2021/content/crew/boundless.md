@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "_the boundless_"
 tag = "boundless"
-where = "USA"
 bandcamp = "https://theboundless.bandcamp.com/"
 website = "http://digitalgnosis.org"
 +++

@@ -966,7 +966,7 @@ a:active {
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   font-family: 'Font Awesome 5 Free';
-  content: '\f144';
+  content: '\f111';
   text-align: center;
   font-size: 50px;
   color: #555555;
@@ -1986,8 +1986,9 @@ h3,
 }
 h4,
 .h4 {
-  font-size: 24px;
-  font-weight: 500;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-size: 26px;
+  font-weight: 600;
 }
 h5,
 .h5 {
@@ -2006,7 +2007,6 @@ h2,
 h3,
 .h3 {
   margin-top: 0;
-  margin-bottom: 24px;
 }
 p {
   margin: 0 0 24px;

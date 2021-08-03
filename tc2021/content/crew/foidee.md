@@ -3,7 +3,6 @@ showonlyimage = false
 draft = false
 image = ""
 title = "Foi Dee"
-where = "UK"
 tag = "foidee"
 soundcloud = "https://soundcloud.com/ferdyferd"
 +++

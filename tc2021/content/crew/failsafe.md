@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "failsafe"
 tag = "failsafe"
-where = "JP"
 soundcloud = "https://soundcloud.com/f_a_i_l_s_a_f_e"
 +++
 

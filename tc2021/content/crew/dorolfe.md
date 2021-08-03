@@ -4,7 +4,6 @@ draft = false
 image = ""
 title = "dorolfe"
 tag = "dorolfe"
-where = "USA"
 soundcloud = "https://soundcloud.com/dorolfe"
 bandcamp = "http://davidrolfe.bandcamp.com/"
 +++
