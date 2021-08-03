@@ -340,9 +340,10 @@ SIDEBAR + RIGHT COLUMN
     font-size: 60px;
   }
   }
-  @media (max-width: 450px) {
+  @media (max-width: 460px) {
     .sidebar-heading {
-      font-size: 10px;
+      font-size: 18px;
+      font-weight: 500;
     }
     }
   @media (min-width: 1400px) and (max-width: 1700px) {
@@ -368,6 +369,7 @@ SIDEBAR + RIGHT COLUMN
   font-size: 16px;
 }
 .sidebar-menu {
+  font-size: 1.2em;
   list-style-type: none;
   padding-left: 20px;
   margin-bottom: 40px;
@@ -380,7 +382,7 @@ SIDEBAR + RIGHT COLUMN
 }
 .sidebar-menu li:before {
   font-family: 'Font Awesome 5 Free';
-  content: '\f192';
+  content: '\f111';
   margin: 0 5px 0 -15px;
   color: #999999;
 }
@@ -389,6 +391,7 @@ SIDEBAR + RIGHT COLUMN
   font-weight: bold;
 }
 .sidebar-menu li.active:before {
+  content: '\f192';
   color: #0a72c7;
 }
 .sidebar-menu li:hover a {
