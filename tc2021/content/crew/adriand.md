@@ -2,8 +2,8 @@
 showonlyimage = false
 draft = false
 image = ""
-title = "adriand"
-tag = "adriand"
+title = "adriandz"
+tag = "adriandz"
 where = "CAN"
 soundcloud = "https://soundcloud.com/adriandz"
 +++
