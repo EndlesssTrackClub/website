@@ -5,6 +5,8 @@ image = ""
 title = "Dead Kousin"
 tag = "dk"
 soundcloud = "https://soundcloud.com/user-5414797"
+bandcamp = "https://deadkousin.bandcamp.com/"
+spotify = "https://open.spotify.com/artist/5zUeHXl5OSAvomtGJHZ0wf?si=lcMj38AUTzulCTuOtKyeNg&dl_branch=1"
 +++
 
 Dead Kousin…

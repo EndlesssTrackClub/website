@@ -4,6 +4,8 @@ draft = false
 image = ""
 title = "William Sharkey"
 tag = "sharkey"
+soundcloud = "soundcloud.com/shark"
+spotify = "https://open.spotify.com/artist/3RWg0HXL2S2JUbW68lgDNr?si=ZJli7yn5QfG9UoT4fzKD6A&dl_branch=1"
 +++
 
 William Sharkey is from Valley Forge in Pennsylvania.

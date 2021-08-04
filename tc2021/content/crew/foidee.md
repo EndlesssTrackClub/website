@@ -5,6 +5,7 @@ image = ""
 title = "Foi Dee"
 tag = "foidee"
 soundcloud = "https://soundcloud.com/ferdyferd"
+spotify = "https://open.spotify.com/artist/6FhTFitQDhZrRa7clsWT1N?si=FpiFWJSxTsKDq-YZeyZZjw&dl_branch=1"
 +++
 
 Foi Dee, real name Ferd, is based in the North of England in the heart of The North York Moors.
