@@ -4,6 +4,8 @@ draft = false
 image = ""
 title = "oddSTAR"
 tag = "oddstar"
+soundcloud = "https://soundcloud.com/oddSTAR"
+website = "https://oddSTAR.com"
 +++
 
 I am oddSTAR -- a curious creature hurtling through space on a massive rock while desperately attempting to channel the mystical energies of the universe through experimental synthesis of organized waves and frequencies.
